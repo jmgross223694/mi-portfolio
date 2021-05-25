@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 1920px;
+    padding: 5rem;
+    overflow: hidden;
+    background: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../Multimedia/Images/fondo.jpg);
+}
+
+.menu {
+    display: flex;
+}
+
+.menu p {
+    padding: 5px;
+    margin-right: 2rem;
+    cursor: pointer;
+    font-family: 'Harlow Solid';
+    font-size: 40px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    box-shadow: 5px 5px 20px white;
+}
+
+.content {
+    margin-top: 2rem;
+}
+
+[data-content] {
+    display: none;
+}
+
+.active[data-content] {
+    display: block;
+}
+
+.divPresentacion {
+    background-color: transparent;
+    width: 100%;
+}
+
+h1 {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    padding: 1rem;
+    background-color: #00000059;
+    display: block;
+}
+
+.txtPresentacion {
+    position: absolute;
+    top: 60px;
+    font: bold 22px 'Comic Sans MS';
+    text-align: justify;
+    text-shadow: 0px 0px 5px black;
+    padding: 1rem;
+    width: 60%;
+    height: 600px;
+    color: white;
+    background-color: #00000059;
+}
+
+.txtCV {
+    position: relative;
+    top: -600px;
+    left: 0;
+    color: white;
+    text-align: center;
+    font: bold 22px 'Comic Sans MS';
+    z-index: 2;
+}
+
+.divFotoPerfil {
+    position: relative;
+    top: 0px;
+    left: 60%;
+    max-width: 40%;
+    min-width: 40%;
+    height: 600px;
+    background-color: #00000059;
+}
+
+.fotoPerfil {
+    position: relative;
+    top: 10px;
+    left: 25%;
+    min-width: 50%;
+    max-width: 50%;
+    display: block;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 800px) {
+    .txtPresentacion {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    
+}
+
+@media screen and (max-height: 550px) {
+    body {
+        overflow-y: scroll;
+    }
+    .txtPresentacion {
+        overflow-y: scroll;
+    }    
+}
+
+@media screen and (max-height: 750px) {
+    body {
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-image: url(../Multimedia/Images/fondo.jpg);
+        overflow-y: scroll;
+    }
+    .txtPresentacion {
+        width: 100%;
+        font-size: 18px;
+
+    }
+    .divFotoPerfil {
+        display: none;
+    }
+    .menu p {
+        display: none;
+    }
+
+    .divPresentacion {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .divRepositorio {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .divInstagram {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .divContacto {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .divFotoInstagram {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 20%;
+        min-width: 20%;
+        height: 200px;
+        background-color: #00000059;
+    }
+
+    .divContacto{
+        position: absolute;
+        width: 100%;
+    }
+
+    .txtContacto {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        font-size: 18px;
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+.divRepositorio {
+    background-color: transparent;
+    width: 100%;
+}
+
+.txtRepositorio {
+    position: absolute;
+    font: bold 22px 'Comic Sans MS';
+    text-align: justify;
+    text-shadow: 0px 0px 5px black;
+    top: 60px;
+    left: 0;
+    width: 20%;
+    height: 600px;
+    color: white;
+    padding: 4rem;
+    background-color: #00000059;
+}
+
+.divFotoRepositorio {
+    position: absolute;
+    top: 60px;
+    left: 20%;
+    max-width: 80%;
+    min-width: 80%;
+    height: 600px;
+    background-color: #00000059;
+}
+
+.fotoRepositorio {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    min-width: 90%;
+    max-width: 90%;
+    display: block;
+    cursor: pointer;
+}
+
+.txtInstagram {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    font: bold 22px 'Comic Sans MS';
+    text-align: justify;
+    text-shadow: 0px 0px 5px black;
+    width: 20%;
+    height: 800px;
+    color: white;
+    padding: 1rem;
+    background-color: #00000059;
+}
+
+.divFotoInstagram {
+    position: absolute;
+    top: 60px;
+    left: 20%;
+    max-width: 80%;
+    min-width: 80%;
+    height: 800px;
+    background-color: #00000059;
+}
+
+.fotoInstagram {
+    position: absolute;
+    top: -50px;
+    left: 5%;
+    min-width: 80%;
+    max-width: 80%;
+    display: block;
+    cursor: pointer;
+}
+
+.txtContacto1 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    font: bold 22px 'Comic Sans MS';
+    text-align: justify;
+    text-shadow: 0px 0px 5px black;
+    width: 50%;
+    height: 500px;
+    color: white;
+    padding: 3rem;
+    background-color: #00000059;
+}
+
+.txtContacto2 {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    font: bold 22px 'Comic Sans MS';
+    text-align: left;
+    text-shadow: 0px 0px 5px black;
+    width: 50%;
+    height: 500px;
+    color: white;
+    background-color: #00000059;
+}
+
+.logo_gmail{
+    position: absolute;
+    width: 10%;
+    top: 13%;
+    left: -14%;
+}
+
+.logo_tel {
+    position: absolute;
+    width: 14%;
+    top: 40%;
+    left: -16%;
+}
