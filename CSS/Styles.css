@@ -22,28 +22,27 @@ p {
     text-shadow: 0px 0px 10px black;
 }
 .primerNombre {
-    top: 10%;
-    left: 65%;
+    top: -50px;
+    left: 870px;
 }
 .segundoNombre {
-    top: 32.5%;
-    left: 70%;
+    top: -15px;
+    left: 1000px;
 }
 .apellido {
-    top: 50%;
-    left: 78%;
+    top: 25px;
+    left: 1218px;
 }
 .divBtn{
     position: relative;
     top: 300px;
-    width: 65%;
 }
 .btnIngresar {
     position: relative;
-    top: -500px;
-    left: 30%;
+    top: -645px;
+    left: 300px;
     font-family: 'Harlow Solid';
-    font-size: 100px;
+    font-size: 65px;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
