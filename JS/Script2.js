@@ -15,25 +15,3 @@ targets.forEach(target => {
     })
 
 })
-
-function calcularEdad() {
-    var fechaActual = new Date();
-    var añoActual = fechaActual.getYear();
-    var mesActual = fechaActual.getMonth();
-    var diaActual = fechaActual.getDay();
-
-    var añoNac = 1994;
-    var mesNac = 6;
-    var diaNac = 3;
-
-    var edad = añoActual - 1994 - 1;
-
-    if (mesActual == mesNac && diaActual >= diaNac) {
-        edad = edad + 1;
-    }
-    else if (mesActual > mesNac) {
-        edad = edad + 1;
-    }
-
-    document.getElementById('parrafoBiografia').innerHTML = edad;
-}
