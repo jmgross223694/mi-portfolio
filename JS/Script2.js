@@ -17,16 +17,16 @@ targets.forEach(target => {
 })
 
 function calcularEdad() {
-    fechaActual = new Date();
-    añoActual = fechaActual.getYear();
-    mesActual = fechaActual.getMonth();
-    diaActual = fechaActual.getDay();
+    var fechaActual = new Date();
+    var añoActual = fechaActual.getYear();
+    var mesActual = fechaActual.getMonth();
+    var diaActual = fechaActual.getDay();
 
-    añoNac = 1994;
-    mesNac = 6;
-    diaNac = 3;
+    var añoNac = 1994;
+    var mesNac = 6;
+    var diaNac = 3;
 
-    edad = añoActual - añoNac - 1;
+    var edad = añoActual - 1994 - 1;
 
     if (mesActual == mesNac && diaActual >= diaNac) {
         edad = edad + 1;
