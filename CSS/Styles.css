@@ -13,6 +13,13 @@ h1 {
     color: white;
 }
 
+.stl-subtitulo-ingresar {
+    color: white;
+    display: inline-flex;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+
 p {
     padding: .5rem;
     font-family: 'Harlow Solid';
