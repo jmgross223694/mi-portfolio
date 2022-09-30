@@ -1,10 +1,101 @@
 body {
     overflow: hidden;
-    width: 1280px;
+    width: 100%;
     background-size: 100%;
     /*background-repeat: space;*/
     background-image: url(../Multimedia/Gif/fondo2.gif);
 }
+
+@media screen and (max-width: 1000px) {
+    .div-h1 {
+        display: grid;
+        justify-content: center;
+    }
+    .divBtn {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+    .btnIngresar {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+    .stl-subtitulo-ingresar {
+        padding-left: 10% !important;
+    }
+    .primerNombre {
+        margin-left: 0 !important;
+        margin-top: 30% !important;
+    }
+    .segundoNombre {
+        padding-left: 0 !important;
+        margin-top: -20% !important;
+        margin-bottom: -20% !important;
+    }
+    .apellido {
+        padding-left: 0 !important;
+    }
+    .div-primerNombre {
+        display: grid;
+        justify-content: center;
+    }
+    .div-segundoNombre {
+        display: grid;
+        justify-content: center;
+    }
+    .div-apellido {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .stl-titulo-ingresar {
+        font-size: 40px;
+    }
+    .stl-subtitulo-ingresar {
+        font-size: 13px;
+    }
+    .btnIngresar {
+        font-size: 55px !important;
+    }
+    .primerNombre {
+        font-size: 40px;
+    }
+    .segundoNombre {
+        font-size: 40px;
+    }
+    .apellido {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .stl-titulo-ingresar {
+        font-size: 30px;
+    }
+
+    .stl-subtitulo-ingresar {
+        font-size: 9px;
+    }
+
+    .btnIngresar {
+        font-size: 40px !important;
+    }
+
+    .primerNombre {
+        font-size: 30px;
+    }
+
+    .segundoNombre {
+        font-size: 30px;
+    }
+
+    .apellido {
+        font-size: 30px;
+    }
+}
+
 h1 {
     padding: .5rem;
     font-size: 60px;
@@ -13,11 +104,14 @@ h1 {
     color: white;
 }
 
+.stl-titulo-ingresar {
+    margin-top: -1%;
+    padding-bottom: 5%;
+}
+
 .stl-subtitulo-ingresar {
     color: white;
-    display: inline-flex;
-    margin-left: 180px;
-    margin-top: 30px;
+    padding-left: 14%;
 }
 
 p {
@@ -29,34 +123,27 @@ p {
 }
 
 .primerNombre {
-    position: relative;
-    left: 15%;
+    margin-left: 45%;
+    margin-top: -10%;
 }
 
 .segundoNombre {
-    position: relative;
-    left: -17%;
+    padding-left: 55%;
 }
 
 .apellido {
-    position: relative;
-    left: 60%;
+    padding-left: 70%;
 }
 
 .divBtn {
-    position: relative;
-    top: 300px;
-    left: 15%;
-    width: 50%;
     cursor: pointer;
+    position: sticky;
+    z-index: 1;
 }
 
 .btnIngresar {
-    position: fixed;
-    top: -176px;
     font-family: 'Harlow Solid';
     font-size: 65px;
-    text-align: center;
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
@@ -67,6 +154,8 @@ p {
     border: solid 1px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    margin-left: 14%;
+    margin-top: 6%;
 }
 
 .btnIngresar:hover {
@@ -74,10 +163,6 @@ p {
 }
 
 .div-apeNom {
-    width: 50%;
-    position: relative;
-    left: 42%;
-
     
 }
 
@@ -86,9 +171,7 @@ p {
 }
 
 .div-segundoNombre{
-    width: 10%;
-    position: relative;
-    left: 35%;
+    
 }
 
 .div-apellido{
