@@ -6,12 +6,12 @@
 }
 
 body {
-    width: 1600px;
+    width: 100%;
     padding: 2rem;
     overflow: hidden;
     background: black;
     background-size: 100%;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-image: url(../Multimedia/Images/fondo.jpg);
 }
 
