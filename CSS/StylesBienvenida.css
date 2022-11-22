@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
 body {
     overflow: hidden;
     width: 100%;
     background-size: 100%;
-    /*background-repeat: space;*/
+    background-repeat: space;
     background-image: url(../Multimedia/Gif/fondo2.gif);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     .div-h1 {
         display: grid;
         justify-content: center;
@@ -99,7 +101,7 @@ body {
 h1 {
     padding: .5rem;
     font-size: 60px;
-    font-family: 'Comic Sans MS';
+    font-family: 'Montserrat Alternates', sans-serif;
     font-style: italic;
     color: white;
 }
@@ -116,7 +118,7 @@ h1 {
 
 p {
     padding: .5rem;
-    font-family: 'Harlow Solid';
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 50px;
     color: white;
     text-shadow: 0px 0px 10px black;
@@ -142,7 +144,7 @@ p {
 }
 
 .btnIngresar {
-    font-family: 'Harlow Solid';
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 65px;
     background-color: transparent;
     border-color: transparent;
@@ -156,6 +158,8 @@ p {
     transition-duration: 0.4s;
     margin-left: 14%;
     margin-top: 6%;
+    padding: 15px;
+
 }
 
 .btnIngresar:hover {
