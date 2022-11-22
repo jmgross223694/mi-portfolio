@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Juan Manuel Gross</title>
+
+    <link rel="Shortcut Icon" type="image/x-icon" href="Multimedia/Images/IconoCG.ico" />
+
+    <link href="CSS/StylesPortfolio.css?v=2.0" rel="stylesheet">
+
+    <script src="JS/ScriptPortfolio.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <section id="section-header" class="stl-header">
+
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1 id="tituloPagina" class="animate__animated animate__rubberBand">Quién Soy?</h1>
+                </div>
+            </div>
+        </header>
+
+    </section>
+
+    <section id="div-menu-lateral">
+
+        <div class="capa"></div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="bienvenida.html" class="animate__animated animate__pulse shake-little">Portada</a> <!-- Link a Index.html -->
+                    <a href="#" class="animate__animated animate__pulse shake-little" onclick="mostrarPresentacion()">¿Quién soy?</a> <!-- Presentación -->
+                    <a href="#" class="animate__animated animate__pulse shake-little" onclick="mostrarProyectos()">Proyectos</a> <!-- Github -->
+                    <a href="#" class="animate__animated animate__pulse shake-little" onclick="mostrarCompuGross()">CompuGross</a> <!-- Descripción CG -->
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contenido" class="stl-section-contenido">
+
+        <section id="section-presentacion" class="stl-section-presentacion animate__animated animate__zoomInUp" style="display: block;">
+
+            <div class="stl-div-presentacion-contenido">
+
+                <div class="stl-div-presentacion-contenido-texto">
+
+                    <div class="stl-div-presentacion-contenido-titulo">
+
+                        <h1>Una breve introducción sobre mi...</h1>
+
+                    </div>
+
+                    <br />
+
+                    <div class="stl-div-presentacion-contenido-parrafo">
+
+                        <p>
+                            Hola a todos, mi nombre es Juan Manuel Gross, tengo <span class="txtPresentacionEdad" id="edadActual"></span>
+                            años y actualmente soy analista de e-commerce en Inc SA (Carrefour).<br><br>
+                            Me apasiona la tecnología, pero sobre todo la informática y la programación,
+                            debido a la gran cantidad de herramientas que nos brinda, en la realización de diversas tareas cotidianas.<br>
+                            Mi pasión por la programación, surgió de mi curiosidad a cerca del detrás de escena de las aplicaciones en general
+                            y los sitios web.<br><br />
+                            En 2013, comencé con un emprendimiento propio 'CompuGross', dedicándome al servicio técnico en informática y
+                            también a la instalación y mantenimiento de cámaras de seguridad.<br />
+                            Además, de forma freelance realizo trabajos de desarrollo de aplicaciones y sitios web, así como también el
+                            mantenimiento de los mismos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <br /><br />
+
+                      <div>
+                          <p class="stl-titulo-imagen-perfil">
+                              Para ver mi CV hacé click en mi foto
+                          </p>
+
+                          <p class="stl-flecha-imagen-perfil">
+                              <center>V</center>
+                          </p>
+                      </div>
+
+                <div class="stl-div-presentacion-contenido-imagen">
+
+                    <a href="https://drive.google.com/file/d/12tgzszI6Cywj3RiV-Nv4YTiOJ9jLfIZR/view?usp=sharing"
+                       target="_blank" rel="noopener noreferrer" style="width: 100%;">
+                        <img class="stl-imagen-perfil shake-slow shake-little"
+                             title="Ver CV" src="Multimedia/Images/perfil.png" alt="FotoPerfil" />
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section-proyectos" style="display: none;">
+
+            <h1>En desarrollo...</h1>
+
+        </section>
+
+        <section id="section-compugross" style="display: none;">
+
+            <h1>En desarrollo...</h1>
+
+        </section>
+
+    </section>
+
+    <br /><br />
+
+    <section id="section-footer" class="stl-footer">
+
+        <div class="stl-div-contacto">
+
+            <a href="https://wa.me/5491156073553?text=Consulta%20Web" target="_blank" rel="noopener noreferrer">
+                <img src="Multimedia/Images/wpp.png" class="stl-img-contacto stl-img-contacto-wapp" />
+            </a>
+
+            <a href="mailto:compugross02.05.13@gmail.com?Subject=CONSULTA-WEB" target="_blank" rel="noopener noreferrer">
+                <img src="Multimedia/Images/correo.png" class="stl-img-contacto stl-img-contacto-mail" />
+            </a>
+
+        </div>
+
+        </section>
+
+</body>
+</html>
