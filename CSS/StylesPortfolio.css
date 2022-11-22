@@ -87,11 +87,11 @@ body {
     padding: 20px !important;
 }
 
-.stl-section-presentacion h1 {
+.stl-section-contenido h1 {
     font-size: 20px;
 }
 
-.stl-section-presentacion p {
+.stl-section-contenido p {
     font-size: 16px;
 }
 
@@ -113,11 +113,22 @@ body {
     filter: drop-shadow(0px 26px 95px #54453f);
 }
 
-.stl-div-presentacion-contenido-parrafo {
+.stl-div-presentacion-contenido-imagen:hover {
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+    width: 30% !important;
+    margin-top: -15% !important;
+}
+
+.stl-div-contenido-titulo-proyectos {
     width: 100%;
 }
 
-.stl-div-presentacion-contenido-texto {
+.stl-div-contenido-parrafo {
+    width: 100%;
+}
+
+.stl-div-contenido-texto {
     width: 80% !important;
     margin-left: 12%;
     margin-right: 15%;
@@ -131,59 +142,14 @@ body {
     margin: 0px auto;
 }
 
-/*1528 px*/
-
-/*@media screen and (max-width: 1588px) {
-    .stl-div-presentacion-contenido-imagen {
-        width: 16%;
-    }
+.txtEdadCompuGross {
+    text-shadow: 0px 0px 5px black;
+    color: white;
 }
 
-@media screen and (max-width: 1526px) {
-    .stl-div-presentacion-contenido-imagen {
-        width: 18%;
-    }
+.stl-div-contenido-texto-compugross {
+    width: 70% !important;
 }
-
-@media screen and (max-width: 1481px) {
-    .stl-div-presentacion-contenido-imagen {
-        width: 20%;
-    }
-}
-
-@media screen and (max-width: 1461px) {
-    .stl-div-presentacion-contenido-texto {
-        width: 42%;
-    }
-}
-
-@media screen and (max-width: 1449px) {
-    .stl-div-presentacion-contenido-imagen {
-        width: 21%;
-    }
-}
-
-@media screen and (max-width: 1429px) {
-    .stl-div-presentacion-contenido-imagen {
-        width: 20%;
-    }
-    
-    .stl-div-presentacion-contenido-texto {
-        width: 43% !important;
-    }
-}
-
-@media screen and (max-width: 1417px) {
-    .stl-div-presentacion-contenido-imagen {
-        width: 21%;
-    }
-}
-
-@media screen and (max-width: 1398px) {
-    .stl-div-presentacion-contenido-texto {
-        width: 44% !important;
-    }
-}*/
 
 @media screen and (max-width: 900px) {
     .logo h1 {
@@ -207,6 +173,10 @@ body {
         font-size: 10px !important;
     }
 
+    .stl-div-presentacion-contenido-imagen:hover {
+        width: 50% !important;
+    }
+
     .logo h1 {
         font-size: 24px !important;
         margin-left: 25px !important;
@@ -216,11 +186,11 @@ body {
         font-size: 30px !important;
     }
 
-    .stl-section-presentacion h1 {
+    .stl-section-contenido h1 {
         font-size: 16px;
     }
 
-    .stl-section-presentacion p {
+    .stl-section-contenido p {
         font-size: 13px;
     }
 

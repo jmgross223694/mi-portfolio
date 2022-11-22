@@ -1,6 +1,7 @@
 // JavaScript source code
 $(function () {
     calcularEdad();
+    calcularEdadCompuGross();
 });
 
 const sectionPresentacion = document.querySelector("#section-presentacion");
@@ -62,4 +63,27 @@ function calcularEdad() {
     }
 
     $('#edadActual').text(edad);
+}
+
+function calcularEdadCompuGross() {
+    var fechaActual = new Date();
+
+    var anioActual = fechaActual.getFullYear(); //Año (AAAA)
+    var mesActual = fechaActual.getMonth() + 1; //Mes (0-11)
+    var diaActual = fechaActual.getDate(); //Día (1-31)
+
+    var anioNac = 2013;
+    var mesNac = 5;
+    var diaNac = 2;
+
+    var edad = anioActual - anioNac - 1;
+
+    if (mesActual == mesNac && diaActual >= diaNac) {
+        edad = edad + 1;
+    }
+    else if (mesActual > mesNac) {
+        edad = edad + 1;
+    }
+
+    $('#edadCompuGross').text(edad);
 }
