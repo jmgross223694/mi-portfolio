@@ -4,11 +4,13 @@ body {
     overflow: hidden;
     width: 100%;
     background-size: 100%;
-    background-repeat: space;
     background-image: url(../Multimedia/Gif/fondo2.gif);
 }
 
 @media screen and (max-width: 1300px) {
+    body {
+        background-size: auto !important;
+    }
     .div-h1 {
         display: grid;
         justify-content: center;
@@ -21,6 +23,11 @@ body {
     .btnIngresar {
         width: 100%;
         margin-left: 0 !important;
+    }
+    .stl-titulo-ingresar {
+        margin-top: 4%;
+        padding-bottom: 5%;
+        margin-left: -15px;
     }
     .stl-subtitulo-ingresar {
         padding-left: 10% !important;
@@ -51,7 +58,7 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .stl-titulo-ingresar {
         font-size: 40px;
     }
@@ -72,7 +79,7 @@ body {
     }
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 380px) {
     .stl-titulo-ingresar {
         font-size: 30px;
     }
