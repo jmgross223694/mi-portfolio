@@ -290,7 +290,7 @@ body {
     max-width: 250px;
     background: #1c1c1c;
     height: 100vh;
-    position: relative;
+    position: fixed;
     transition: all 500ms ease;
     transform: translateX(-100%);
 }
