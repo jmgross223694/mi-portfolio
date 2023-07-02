@@ -120,6 +120,12 @@ body {
     .stl-imagen-perfil {
         filter: blur(0px) !important;
     }
+    .stl-imagen-perfil:hover {
+        -webkit-transition: 0.25s ease-in-out;
+        transform: scale(1) !important;
+        border-radius: 50% !important;
+        filter: blur(0px);
+    }
 }
 
 .stl-div-presentacion-contenido-imagen {
