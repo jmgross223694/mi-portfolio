@@ -109,15 +109,27 @@ body {
 }
 
 .stl-imagen-perfil {
-    width: 100%;
+    width: 150px;
     filter: drop-shadow(0px 26px 95px #54453f);
+    -webkit-transition: 0.25s ease-in-out;
+    border-radius: 50%;
+    filter: blur(2px);
 }
 
-.stl-div-presentacion-contenido-imagen:hover {
-    -webkit-transition-duration: 2s;
-    transition-duration: 2s;
-    width: 30% !important;
-    margin-top: -15% !important;
+.stl-div-presentacion-contenido-imagen {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.stl-imagen-perfil:hover {
+    -webkit-transition: 0.25s ease-in-out;
+    transform: scale(1.5);
+    border-radius: 0;
+    filter: blur(0px);
 }
 
 .stl-div-contenido-titulo-proyectos {
@@ -132,14 +144,6 @@ body {
     width: 80% !important;
     margin-left: 12%;
     margin-right: 15%;
-}
-
-.stl-div-presentacion-contenido-imagen {
-    width: 20% !important;
-    justify-content: center;
-    display: flex;
-    cursor: pointer;
-    margin: 0px auto;
 }
 
 .txtEdadCompuGross {
