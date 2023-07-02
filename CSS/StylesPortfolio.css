@@ -116,6 +116,12 @@ body {
     filter: blur(2px);
 }
 
+@media screen and (max-width: 768px) {
+    .stl-imagen-perfil {
+        filter: blur(0px);
+    }
+}
+
 .stl-div-presentacion-contenido-imagen {
     width: 100%;
     justify-content: center;
