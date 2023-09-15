@@ -150,8 +150,10 @@ body {
 .stl-imagen-perfil:hover {
     -webkit-transition: 0.25s ease-in-out;
     transform: scale(1.5);
-    border-radius: 0;
+    border-radius: 50%;
     filter: blur(0px);
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 .stl-div-contenido-titulo-proyectos {
