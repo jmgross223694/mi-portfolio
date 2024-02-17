@@ -9,7 +9,7 @@
     -webkit-transition: 0.5s ease all !important;
 }
 body {
-    min-width: 355px;
+    min-width: 355px !important;
     padding: 2%;
     padding-top: 3%;
     width: 100%;
@@ -18,8 +18,8 @@ body {
     display: flex;
     background-image: url(../fondo-stitch-2.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /* Puedes ajustar esto según tus preferencias */
-    background-attachment: fixed; /* Para mantener el fondo fijo mientras se desplaza la página */
+    background-size: cover;
+    background-attachment: fixed;
 }
 .container {
     width: 100%;
@@ -48,7 +48,7 @@ body {
 }
 
 .div-fotos {
-    margin: 15% 0 0 0 !important;
+    margin: 20% 0 0 0 !important;
 }
 
 .col-lg-4 {
@@ -64,4 +64,22 @@ body {
     /*max-height: 200px !important;*/
     box-shadow: 1px 1px 10px #000 !important;
     cursor: default !important;
+}
+
+@media only screen and (max-width: 812px) {
+    .div-fotos {
+        margin: 45% 0 0 0 !important;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .div-fotos {
+        margin: 65% 0 0 0 !important;
+    }
+    .text-center h1 {
+        font-size: 22px !important;
+    }
+    .text-center h5 {
+        font-size: 16px !important;
+    }
 }
