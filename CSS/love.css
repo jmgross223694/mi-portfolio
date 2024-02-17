@@ -1,0 +1,93 @@
+﻿* {
+    text-align: center !important;
+    color: #000;
+    text-shadow: 1px 1px 10px #fff !important;
+    margin: 0 auto !important;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-transition: 0.5s ease all !important;
+}
+body {
+    padding: 2%;
+    padding-top: 7%;
+    width: 100%;
+    max-width: 100% !important;
+    justify-content: center;
+    display: flex;
+    background-image: url(../fondo-stitch.gif);
+    background-size: 100%;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /*border: 1px solid red;*/
+}
+.div-title {
+    width: 100%;
+    /*border: 1px solid blue;*/
+}
+    .div-title h1 {
+        
+    }
+.div-content {
+    margin-top: 10% !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /*border: 1px solid blue;*/
+}
+.div-label {
+
+}
+.div-label label {
+}
+.div-text {
+
+}
+    .div-text input {
+        height: 100px !important;
+        font-size: 50px !important;
+        width: 150px !important;
+    }
+.div-btn {
+    margin-top: 10% !important;
+}
+    .div-btn input {
+        height: 100px !important;
+        width: 200px !important;
+        font-size: 40px !important;
+        color: #fff;
+        text-shadow: 1px 1px 10px #000 !important;
+        background-color: transparent;
+        border: transparent;
+        filter: drop-shadow(1px 1px 10px #000) !important;
+    }
+        .div-btn input:hover {
+            background-color: transparent;
+            border: transparent;
+            transform: scale(1.2);
+        }
+        .div-btn input:active {
+            background-color: transparent !important;
+            border: transparent !important;
+            transform: scale(1.2) !important;
+        }
+        .div-btn input:focus-visible {
+            background-color: transparent !important;
+            border: transparent !important;
+            transform: scale(1.2) !important;
+            outline: transparent !important;
+            box-shadow: none !important;
+        }
+.swal2-title {
+    margin-top: 25px !important;
+}
+.swal2-html-container {
+    margin: 25px !important;
+}
