@@ -40,4 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             validarYRedirigir();
         }
     });
+    ingresarButton.addEventListener('click', function () {
+        validarYRedirigir();
+    });
 });
