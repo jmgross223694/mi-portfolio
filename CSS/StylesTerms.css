@@ -1,0 +1,41 @@
+body {
+    /*background-color: #00000070 !important;*/
+    background-color: #000 !important;
+    margin-top: -190px;
+    padding-top: 190px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.stl-div-principal {
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0px -3px 37px #fff;
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.stl-ttl {
+    text-align: center;
+    font-size: 30px;
+}
+
+.stl-txt {
+    text-align: justify;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 667px) {
+    .stl-div-principal {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .stl-ttl {
+        font-size: 20px;
+    }
+
+    .stl-txt {
+        font-size: 14px;
