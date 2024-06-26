@@ -26,7 +26,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     z-index: -1;
     top: 0;
     left: 0;
@@ -57,15 +57,27 @@ body {
 }
 
 .stl-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 .stl-div-contacto {
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100% !important;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    height: 8vh;
+    align-items: center;
 }
 
 .stl-img-contacto {
-    width: 50px;
+    width: 35px;
     display: scroll;
-    position: fixed;
     right: 60px;
     cursor: pointer;
 }
@@ -73,6 +85,21 @@ body {
 @media screen and (max-width: 700px) {
     .stl-img-contacto {
         right: 10px;
+    }
+
+    .stl-section-contenido h1 {
+        text-align: center !important;
+    }
+
+    .stl-div-contenido-texto {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .stl-img-compugross-ig {
+        display: flex;
+        margin: 0 auto;
     }
 }
 
@@ -105,8 +132,7 @@ body {
     font-size: 16px;
 }
 
-.stl-div-presentacion-contenido {
-}
+.stl-div-presentacion-contenido {}
 
 .stl-titulo-imagen-perfil {
     display: flex;
@@ -118,26 +144,33 @@ body {
     font-size: 13px !important;
 }
 
+.h5-see-more-proyects {
+    animation: pulse 1s infinite;
+}
+
 .stl-imagen-perfil {
     width: 150px;
     filter: drop-shadow(0px 26px 95px #54453f);
-    -webkit-transition: 0.6s all;
+    -webkit-transition: 0.6s all !important;
     animation-duration: 0.6s;
     border-radius: 50%;
     filter: blur(2px);
     position: relative;
     top: 0 !important;
+    animation: pulse 1s infinite;
 }
 
 @media screen and (max-width: 768px) {
     .stl-imagen-perfil {
         filter: blur(0px) !important;
     }
+
     .stl-imagen-perfil:hover {
         -webkit-transition: 0.25s all;
         transform: scale(1) !important;
         border-radius: 50% !important;
         filter: blur(0px);
+        animation: none !important;
     }
 }
 
@@ -151,13 +184,13 @@ body {
 }
 
 .stl-imagen-perfil:hover {
-    -webkit-transition: 0.6s ease-in-out;
+    -webkit-transition: 0.6s all !important;
     animation-duration: 0.6s;
-    transform: scale(2);
+    transform: scale(1.5) !important;
     border-radius: 50%;
     filter: blur(0px);
     position: relative;
-    top: 65px !important;
+    top: 15px !important;
 }
 
 .stl-div-contenido-titulo-proyectos {
@@ -169,7 +202,7 @@ body {
 }
 
 .stl-div-contenido-texto {
-    width: 80% !important;
+    width: 80%;
     margin-left: 12%;
     margin-right: 15%;
 }
@@ -180,7 +213,7 @@ body {
 }
 
 .stl-div-contenido-texto-compugross {
-    width: 70% !important;
+    width: 100% !important;
 }
 
 @media screen and (max-width: 900px) {
@@ -249,50 +282,52 @@ body {
     margin: auto;
 }
 
-    .container .btn-menu, .logo {
-        float: left;
-        line-height: 100px;
-    }
+.container .btn-menu,
+.logo {
+    float: left;
+    line-height: 100px;
+}
 
-        .container .btn-menu label {
-            color: #fff;
-            font-size: 50px;
-            cursor: pointer;
-            position: fixed;
-            left: 5%;
-        }
+.container .btn-menu label {
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    position: fixed;
+    left: 5%;
+}
 
-        .logo h1 {
-            color: #fff;
-            font-weight: 600;
-            font-size: 36px;
-            width: 100%;
-            position: fixed;
-            left: 10%;
-            margin-left: 30px;
-        }
+.logo h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+    width: 100%;
+    position: fixed;
+    left: 10%;
+    margin-left: 30px;
+}
 
-    .container .menu {
-        float: right;
-        line-height: 100px;
-    }
+.container .menu {
+    float: right;
+    line-height: 100px;
+}
 
-        .container .menu a {
-            display: inline-block;
-            padding: 15px;
-            line-height: normal;
-            text-decoration: none;
-            color: #fff;
-            transition: all 1s ease;
-            border-bottom: 2px solid transparent;
-            font-size: 25px;
-            margin-right: 5px;
-        }
+.container .menu a {
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 25px;
+    margin-right: 5px;
+}
 
-            .container .menu a:hover {
-                border-bottom: 2px solid #c7c7c7;
-                padding-bottom: 5px;
-            }
+.container .menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
 /*Fin de Estilos para el encabezado*/
 
 /*Menù lateral*/
@@ -302,7 +337,7 @@ body {
 
 .container-menu {
     position: fixed;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
     top: 0;
@@ -312,7 +347,7 @@ body {
     visibility: hidden;
 }
 
-#btn-menu:checked ~ .container-menu {
+#btn-menu:checked~.container-menu {
     opacity: 1;
     visibility: visible;
 }
@@ -327,7 +362,7 @@ body {
     transform: translateX(-100%);
 }
 
-#btn-menu:checked ~ .container-menu .cont-menu {
+#btn-menu:checked~.container-menu .cont-menu {
     transform: translateX(0%);
 }
 
@@ -339,20 +374,20 @@ body {
     transform: translateY(15%);
 }
 
-    .cont-menu nav a {
-        display: block;
-        text-decoration: none;
-        padding: 20px;
-        color: #c7c7c7;
-        border-left: 5px solid transparent;
-        transition: all 800ms ease;
-        font-size: 25px;
-    }
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 800ms ease;
+    font-size: 25px;
+}
 
-        .cont-menu nav a:hover {
-            border-left: 5px solid #c7c7c7;
-            background: #80808069;
-        }
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #80808069;
+}
 
 .cont-menu label {
     position: absolute;
@@ -362,4 +397,5 @@ body {
     cursor: pointer;
     font-size: 18px;
 }
+
 /*Fin de Menù lateral*/

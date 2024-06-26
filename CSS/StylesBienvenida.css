@@ -7,51 +7,92 @@ body {
     background-image: url(../Multimedia/Gif/fondo2.gif);
 }
 
+.stl-titulo-ingresar {
+    text-align: left !important;
+    text-transform: uppercase;
+}
+
+.btnIngresar {
+    animation: pulse 1s infinite;
+}
+
 @media screen and (max-width: 1300px) {
     body {
         background-size: auto !important;
     }
+
     .div-h1 {
         display: grid;
         justify-content: center;
     }
+
     .divBtn {
         display: grid;
         justify-content: center;
         width: 100%;
     }
+
+    #section-ingresar {
+        margin-left: -10px !important;
+    }
+
+    .divBtn {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        position: absolute !important;
+        bottom: 0;
+        margin-bottom: 30px;
+    }
+
     .btnIngresar {
         width: 100%;
         margin-left: 0 !important;
+        margin-top: 0 !important;
     }
+
     .stl-titulo-ingresar {
-        margin-top: 4%;
         padding-bottom: 5%;
-        margin-left: -15px;
+        margin: 30px 0 0 -15px !important;
+        text-align: center !important;
     }
+
     .stl-subtitulo-ingresar {
         padding-left: 10% !important;
     }
+
+    .div-apeNom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 65%;
+    }
+
     .primerNombre {
         margin-left: 0 !important;
         margin-top: 30% !important;
     }
+
     .segundoNombre {
         padding-left: 0 !important;
         margin-top: -20% !important;
         margin-bottom: -20% !important;
     }
+
     .apellido {
         padding-left: 0 !important;
     }
+
     .div-primerNombre {
         display: grid;
         justify-content: center;
     }
+
     .div-segundoNombre {
         display: grid;
         justify-content: center;
     }
+
     .div-apellido {
         display: grid;
         justify-content: center;
@@ -62,18 +103,23 @@ body {
     .stl-titulo-ingresar {
         font-size: 40px;
     }
+
     .stl-subtitulo-ingresar {
         font-size: 13px;
     }
+
     .btnIngresar {
         font-size: 55px !important;
     }
+
     .primerNombre {
         font-size: 40px;
     }
+
     .segundoNombre {
         font-size: 40px;
     }
+
     .apellido {
         font-size: 40px;
     }
@@ -166,33 +212,22 @@ p {
     margin-left: 14%;
     margin-top: 6%;
     padding: 15px;
-
 }
 
 .btnIngresar:hover {
     color: #beff00;
 }
 
-.div-apeNom {
-    
-}
+.div-primerNombre {}
 
-.div-primerNombre{
+.div-segundoNombre {}
 
-}
-
-.div-segundoNombre{
-    
-}
-
-.div-apellido{
-
-}
+.div-apellido {}
 
 .div-h1 {
     width: 100%;
 }
 
-.div-container{
+.div-container {
     width: 100%;
 }

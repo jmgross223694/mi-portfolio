@@ -13,14 +13,16 @@ const idTituloPagina = document.querySelector("#tituloPagina");
 function mostrarPresentacion() {
     OcultarOtrasSection();
     OcultarMenuLateral();
-    $('#tituloPagina').text("Qui\u00E9n soy?");
+    // $('#tituloPagina').text("Qui\u00E9n soy?");
+    $('#tituloPagina').text("Who I am?");
     sectionPresentacion.style.display = "block";
 }
 
 function mostrarProyectos() {
     OcultarOtrasSection();
     OcultarMenuLateral();
-    $('#tituloPagina').text("Proyectos");
+    // $('#tituloPagina').text("Proyectos");
+    $('#tituloPagina').text("Proyects");
     idTituloPagina.classList
     sectionProyectos.style.display = "block";
 }
@@ -45,9 +47,9 @@ function OcultarOtrasSection() {
 function calcularEdad() {
     var fechaActual = new Date();
 
-    var anioActual = fechaActual.getFullYear(); //Año (AAAA)
+    var anioActual = fechaActual.getFullYear(); //Aï¿½o (AAAA)
     var mesActual = fechaActual.getMonth() + 1; //Mes (0-11)
-    var diaActual = fechaActual.getDate(); //Día (1-31)
+    var diaActual = fechaActual.getDate(); //Dï¿½a (1-31)
 
     var anioNac = 1994;
     var mesNac = 6;
@@ -68,9 +70,9 @@ function calcularEdad() {
 function calcularEdadCompuGross() {
     var fechaActual = new Date();
 
-    var anioActual = fechaActual.getFullYear(); //Año (AAAA)
+    var anioActual = fechaActual.getFullYear(); //Aï¿½o (AAAA)
     var mesActual = fechaActual.getMonth() + 1; //Mes (0-11)
-    var diaActual = fechaActual.getDate(); //Día (1-31)
+    var diaActual = fechaActual.getDate(); //Dï¿½a (1-31)
 
     var anioNac = 2013;
     var mesNac = 5;
