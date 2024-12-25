@@ -76,11 +76,11 @@ body {
 .cont-menu nav a {
     display: block;
     text-decoration: none;
-    padding: 2rem;
+    padding: 1.5rem;
     color: #c7c7c7;
     border-left: 5px solid transparent;
     transition: all 800ms ease;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -273,6 +273,10 @@ a {
     margin: 2rem !important;
 }
 
+.div-link-github .btn {
+    margin-left: 2.8rem;
+}
+
 #compugross {
     max-height: fit-content !important;
 }
@@ -453,6 +457,10 @@ a {
         justify-content: center !important;
         text-align: center !important;
         font-size: 0.8em !important;
+    }
+
+    .div-link-github .btn {
+        margin-left: 0;
     }
 
     #compugross img {
