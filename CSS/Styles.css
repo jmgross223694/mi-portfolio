@@ -332,12 +332,12 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-    /* header {
+    header {
         background-color: #000;
-    } */
+    }
     
     body {
-        padding: 3rem 0 0 5rem;
+        padding: 3rem 0 0 0;
     }
     
     #welcome {
@@ -352,7 +352,7 @@ a {
     .welcome-text {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         text-align: center !important;
     }
 
@@ -412,6 +412,8 @@ a {
         flex-direction: column;
         max-height: 440px;
         min-height: 440px;
+        min-width: 300px;
+        max-width: 300px;
         border: .1px solid #f2f2f2 !important;
         background-color: #f2f2f2 !important;
     }
@@ -439,18 +441,24 @@ a {
 
     #projects h2, #compugross h2, #about h2 {
         font-size: 2em !important;
+        width: 100%;
+        text-align: center;
     }
 
     #projects p, #compugross p, #about p {
         font-size: 1em !important;
     }
 
+    #projects .technologies {
+        justify-content: center !important;
+    }
+
     #compugross img {
         width: 80% !important;
     }
 
-    #welcome {
-        margin-top: 3rem;
+    #welcome, #projects, #compugross, #about {
+        padding-top: 5rem;
     }
 
     #projects, #compugross, #about {
@@ -472,7 +480,7 @@ a {
     }
 
     .btn-menu label {
-        font-size: 9vw;
+        font-size: 9vw !important;
     }
 
     .welcome-description {
