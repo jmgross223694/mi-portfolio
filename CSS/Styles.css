@@ -1,0 +1,471 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 2rem 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(../Multimedia/Gif/fondo2.gif) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    min-width: 355px !important
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999 !important;
+    height: 5rem;
+}
+
+.header .btn-menu label {
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    position: fixed;
+    left: 5%;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked~.container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: fixed;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.menu-cerrado {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 2rem;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 800ms ease;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #80808069;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px #f2f2f2;
+}
+
+/* Body */
+
+.container {
+    text-align: left;
+}
+
+.div-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 3em;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.25rem !important;
+}
+
+#welcome {
+    height: 100vh !important;
+    width: auto;
+}
+
+.welcome-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.welcome-text h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#welcome h5 {
+    margin-bottom: 2rem;
+}
+
+#welcome center {
+    margin-top: 3rem;
+}
+
+.welcome-text .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-img img {
+    max-height: 100vh;
+    max-width: auto;
+    height: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.25));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.25));
+    max-width: 763px !important;
+}
+
+.div-btn-responsive {
+    display: none;
+}
+
+.mt-5 {
+    margin-top: 0 !important;
+}
+
+.col-md-4 {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    margin: 1rem !important;
+    color: #000 !important;
+    max-width: 220px;
+    min-width: 220px;
+    max-height: 220px;
+    min-height: 220px;
+    overflow: scroll;
+    border: none !important;
+    box-shadow: 3px 3px 3px #000;
+    background-color: transparent !important;
+    border-radius: 0.5rem !important;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.card a {
+    z-index: 2;
+    opacity: 0;
+    text-decoration: none !important;
+    color: #fff !important;
+    height: 220px;
+    -webkit-transition: 0.3s ease-in-out all;
+}
+
+.card:hover a {
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out all;
+}
+
+.card .card-body {
+    color: #fff !important;
+    background-color: #555454;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    -webkit-transition: 0.3s ease-in-out all;
+    min-height: 100% !important;
+}
+
+.card .card-body h5 {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.card .card-body .card-text {
+    font-size: 12px !important;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.card .card-body .description {
+    justify-content: center !important;
+}
+
+.div-link-github {
+    margin: 2rem !important;
+}
+
+#compugross {
+    max-height: fit-content !important;
+}
+
+#compugross .content, #about .content {
+    padding: 2rem 3rem;
+}
+
+#compugross .instagram {
+    text-align: center;
+}
+
+#compugross .instagram img {
+    width: 95%;
+}
+
+#about {
+    margin-top: 3rem !important;
+    margin-bottom: 1rem;
+}
+
+#about .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    padding: 3rem;
+}
+
+#about .contacto .div-cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#about .contacto a {
+    text-decoration: none !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+#about .contacto img {
+    max-width: 5rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1366px) {
+    #compugross .content {
+        padding-right: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        background-color: #000;
+    }
+    
+    body {
+        padding: 3rem 0 0 5rem;
+    }
+    
+    #welcome {
+        height: auto !important;
+    }
+
+    .welcome-main {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    #welcome h1 {
+        font-size: 2em !important;
+    }
+    
+    #welcome h5 {
+        text-transform: uppercase;
+        font-size: 1em !important;
+    }
+
+    #welcome h7 {
+        font-size: 0.7em !important;
+    }
+
+    .welcome-img img {
+        max-height: auto !important;
+        width: 60vw !important;
+    }
+
+    .welcome-text center {
+        display: none;
+    }
+
+    .div-btn-responsive {
+        display: block;
+        width: 50vw;
+    }
+
+    .div-btn-responsive .btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #compugross .content {
+        padding-right: 3rem !important;
+    }
+    
+    #about .contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    #about .contacto img {
+        width: 40px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #projects .card {
+        flex-direction: column;
+        max-height: 440px;
+        min-height: 440px;
+        border: .1px solid #f2f2f2 !important;
+        background-color: #f2f2f2 !important;
+    }
+
+    #projects .card img, #projects .card a {
+        position: relative;
+        height: 220px;
+        opacity: 1;
+    }
+
+    #projects .card a .card-body {
+        background-color: #0009;
+    }
+
+    #projects .div-link-github {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #projects .div-link-github a {
+        width: 50vw;
+    }
+
+    #projects h2, #compugross h2, #about h2 {
+        font-size: 2em !important;
+    }
+
+    #projects p, #compugross p, #about p {
+        font-size: 1em !important;
+    }
+
+    #compugross img {
+        width: 80% !important;
+    }
+
+    #welcome {
+        margin-top: 3rem;
+    }
+
+    #projects, #compugross, #about {
+        margin-top: 5rem;
+    }
+
+    #about .contacto {
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 3.5rem !important;
+    }
+
+    .btn-menu label {
+        font-size: 9vw;
+    }
+
+    .welcome-description {
+        text-align: left !important;
+    }
+}
+/* 
+div {
+    border: 1px solid red;
+} */
