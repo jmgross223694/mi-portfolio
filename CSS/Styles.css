@@ -332,9 +332,9 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-    header {
+    /* header {
         background-color: #000;
-    }
+    } */
     
     body {
         padding: 3rem 0 0 5rem;
