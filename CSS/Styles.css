@@ -451,10 +451,12 @@ a {
 
     #projects .technologies {
         justify-content: center !important;
+        text-align: center !important;
+        font-size: 0.8em !important;
     }
 
     #compugross img {
-        width: 80% !important;
+        width: 90% !important;
     }
 
     #welcome, #projects, #compugross, #about {
