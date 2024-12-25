@@ -3,42 +3,42 @@
         "titulo": "La Casa del Mimbre",
         "descripcion": "Ecommerce",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "../Multimedia/Images/fondoCasaMimbre.jpg",
+        "imagen": "Multimedia/Images/fondoCasaMimbre.jpg",
         "url": "https://lacasadelmimbre.com.ar/"
     },
     {
         "titulo": "CompuGross",
         "descripcion": "Gestión de Servicios",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "../Multimedia/Images/fondoCompuGross.jpg",
+        "imagen": "Multimedia/Images/fondoCompuGross.jpg",
         "url": "https://github.com/jmgross223694/CompuGross_Desktop"
     },
     {
         "titulo": "Huellas Conectadas",
         "descripcion": "Adopción de Mascotas",
         "technologies": ".NET, C#, API, SQL, HTML, CSS, JS",
-        "imagen": "../Multimedia/Images/HuellasConectadas.png",
+        "imagen": "Multimedia/Images/HuellasConectadas.png",
         "url": "https://www.plataforma5.la/"
     },
     {
         "titulo": "Traffic light",
         "descripcion": "Semáforo",
         "technologies": ".NET, C#",
-        "imagen": "../Multimedia/Images/TrafficLight.png",
+        "imagen": "Multimedia/Images/TrafficLight.png",
         "url": "https://github.com/jmgross223694/TrafficLight"
     },
     {
         "titulo": "YourGym",
         "descripcion": "Gestión de Gimnasio",
         "technologies": "C++",
-        "imagen": "../Multimedia/Images/fondoYourGym.jpg",
+        "imagen": "Multimedia/Images/fondoYourGym.jpg",
         "url": "url/a/proyecto2"
     },
     {
         "titulo": "Lubri App",
         "descripcion": "Gestión de Lubricentro",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "../Multimedia/Images/LubriApp.png",
+        "imagen": "Multimedia/Images/LubriApp.png",
         "url": "https://github.com/jmgross223694/LubriApp.png"
     }
 ]

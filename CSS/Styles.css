@@ -218,9 +218,19 @@ p {
     -webkit-transition: 0.3s ease-in-out all;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .card:hover a {
-    opacity: 1;
+    opacity: 1 !important;
     -webkit-transition: 0.3s ease-in-out all;
+}
+
+
+
+.card:hover .card-body {
+    z-index: 1;
 }
 
 .card .card-body {
