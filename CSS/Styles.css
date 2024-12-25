@@ -460,6 +460,10 @@ a {
     #about .contacto {
         margin-bottom: 4rem;
     }
+
+    #compugross .content, #about .content {
+        padding: 2rem 1rem !important;
+    }
 }
 
 @media screen and (max-width: 550px) {
