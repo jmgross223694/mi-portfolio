@@ -196,6 +196,7 @@ p {
     box-shadow: 3px 3px 3px #000;
     background-color: transparent !important;
     border-radius: 0.5rem !important;
+    overflow: hidden !important;
 }
 
 .card img {
@@ -214,22 +215,26 @@ p {
     text-decoration: none !important;
     color: #fff !important;
     height: 220px;
-    -webkit-transition: 0.3s ease-in-out all;
 }
 
 a {
     text-decoration: none !important;
 }
 
-.card:hover a {
+.card:hover .card-body {
     opacity: 1 !important;
+    transition: 0.5s ease-in-out all;
     -webkit-transition: 0.3s ease-in-out all;
+    -moz-transition: 0.3s ease-in-out all;
+    -o-transition: 0.3s ease-in-out all;
 }
 
-
-
-.card:hover .card-body {
-    z-index: 1;
+.card:hover img {
+    opacity: 0 !important;
+    transition: 0.5s ease-in-out all;
+    -webkit-transition: 0.3s ease-in-out all;
+    -moz-transition: 0.3s ease-in-out all;
+    -o-transition: 0.3s ease-in-out all;
 }
 
 .card .card-body {
@@ -240,8 +245,13 @@ a {
     justify-content: center;
     align-content: center;
     align-items: flex-start;
+    transition: 0.3s ease-in-out all;
     -webkit-transition: 0.3s ease-in-out all;
+    -moz-transition: 0.3s ease-in-out all;
+    -o-transition: 0.3s ease-in-out all;
     min-height: 100% !important;
+    z-index: 1;
+    opacity: 0;
 }
 
 .card .card-body h5 {
@@ -427,8 +437,14 @@ a {
         opacity: 1;
     }
 
-    #projects .card a .card-body {
-        background-color: #0009;
+    .card:hover img {
+        opacity: 1 !important;
+    }
+    
+
+    #projects .card .card-body {
+        background-color: #000 !important;
+        opacity: 1 !important;
     }
 
     #projects .div-link-github {

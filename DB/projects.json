@@ -3,14 +3,14 @@
         "titulo": "La Casa del Mimbre",
         "descripcion": "Ecommerce",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "Multimedia/Images/fondoCasaMimbre.jpg",
+        "imagen": "Multimedia/Images/fondoCasaMimbre.png",
         "url": "https://lacasadelmimbre.com.ar/"
     },
     {
         "titulo": "CompuGross",
         "descripcion": "Services Management",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "Multimedia/Images/fondoCompuGross.jpg",
+        "imagen": "Multimedia/Images/fondoCompuGross.png",
         "url": "https://github.com/jmgross223694/CompuGross_Desktop"
     },
     {
@@ -31,7 +31,7 @@
         "titulo": "YourGym",
         "descripcion": "Gym Management",
         "technologies": "C++",
-        "imagen": "Multimedia/Images/fondoYourGym.jpg",
+        "imagen": "Multimedia/Images/fondoYourGym.png",
         "url": "url/a/proyecto2"
     },
     {
