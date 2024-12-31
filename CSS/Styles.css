@@ -185,8 +185,11 @@ p {
     display: flex;
 }
 
-.card {
+#projects .projectsContainer .col-md-4 a {
     margin: 1rem !important;
+}
+
+.card {
     color: #000 !important;
     max-width: 220px;
     min-width: 220px;
