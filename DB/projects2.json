@@ -1,0 +1,44 @@
+[
+    {
+        "titulo": "La Casa del Mimbre",
+        "descripcion": "Comercio Electrónico",
+        "technologies": ".NET, C#, SQL, HTML, CSS, JS",
+        "imagen": "Multimedia/Images/fondoCasaMimbre.png",
+        "url": "https://lacasadelmimbre.com.ar/"
+    },
+    {
+        "titulo": "CompuGross",
+        "descripcion": "Administrador de Servicios",
+        "technologies": ".NET, C#, SQL, HTML, CSS, JS",
+        "imagen": "Multimedia/Images/fondoCompuGross.png",
+        "url": "https://github.com/jmgross223694/CompuGross_Desktop"
+    },
+    {
+        "titulo": "Huellas Conectadas",
+        "descripcion": "Adopción de Mascotas",
+        "technologies": ".NET, C#, API, SQL, HTML, CSS, JS",
+        "imagen": "Multimedia/Images/HuellasConectadas.png",
+        "url": "https://www.plataforma5.la/"
+    },
+    {
+        "titulo": "Traffic Light",
+        "descripcion": "Simulador de Semáforo",
+        "technologies": ".NET, C#",
+        "imagen": "Multimedia/Images/TrafficLight.png",
+        "url": "https://github.com/jmgross223694/TrafficLight"
+    },
+    {
+        "titulo": "YourGym",
+        "descripcion": "Administrador de Gimnasio",
+        "technologies": "C++",
+        "imagen": "Multimedia/Images/fondoYourGym.png",
+        "url": "url/a/proyecto2"
+    },
+    {
+        "titulo": "Lubri App",
+        "descripcion": "Administrador de Lubricentro",
+        "technologies": ".NET, C#, SQL, HTML, CSS, JS",
+        "imagen": "Multimedia/Images/LubriApp.png",
+        "url": "https://github.com/jmgross223694/LubriApp.png"
+    }
+]

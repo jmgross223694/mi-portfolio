@@ -30,7 +30,7 @@ body {
     left: 5%;
 }
 
-#btn-menu {
+#btn-menu, #btn-menu2 {
     display: none;
 }
 
@@ -46,7 +46,7 @@ body {
     visibility: hidden;
 }
 
-#btn-menu:checked~.container-menu {
+#btn-menu:checked~.container-menu, #btn-menu2:checked~.container-menu {
     opacity: 1;
     visibility: visible;
 }
@@ -61,7 +61,7 @@ body {
     transform: translateX(-100%);
 }
 
-#btn-menu:checked~.container-menu .cont-menu {
+#btn-menu:checked~.container-menu .cont-menu, #btn-menu2:checked~.container-menu .cont-menu {
     transform: translateX(0%);
 }
 
@@ -124,7 +124,7 @@ p {
     font-size: 1.25rem !important;
 }
 
-#welcome {
+#welcome, #welcome2 {
     height: 100vh !important;
     width: auto;
 }
@@ -145,11 +145,11 @@ p {
     margin-bottom: 20px;
 }
 
-#welcome h5 {
+#welcome h5, #welcome2 h5 {
     margin-bottom: 2rem;
 }
 
-#welcome center {
+#welcome center, #welcome2 center {
     margin-top: 3rem;
 }
 
@@ -185,7 +185,7 @@ p {
     display: flex;
 }
 
-#projects .projectsContainer .col-md-4 a {
+#projects .projectsContainer .col-md-4 a, #projects2 .projectsContainer .col-md-4 a {
     margin: 1rem !important;
 }
 
@@ -289,28 +289,28 @@ a {
     margin-left: 2.8rem;
 }
 
-#compugross {
+#compugross, #compugross2 {
     max-height: fit-content !important;
 }
 
-#compugross .content, #about .content {
+#compugross .content, #about .content, #compugross2 .content, #about2 .content {
     padding: 2rem 3rem;
 }
 
-#compugross .instagram {
+#compugross .instagram, #compugross2 .instagram {
     text-align: center;
 }
 
-#compugross .instagram img {
+#compugross .instagram img, #compugross2 .instagram img {
     width: 95%;
 }
 
-#about {
+#about, #about2 {
     margin-top: 3rem !important;
     margin-bottom: 1rem;
 }
 
-#about .contacto {
+#about .contacto, #about2 .contacto {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -321,7 +321,7 @@ a {
     padding: 3rem;
 }
 
-#about .contacto .div-cv {
+#about .contacto .div-cv, #about2 .contacto .div-cv {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,20 +329,20 @@ a {
     align-items: center;
 }
 
-#about .contacto a {
+#about .contacto a, #about2 .contacto a {
     text-decoration: none !important;
     color: #fff !important;
     font-weight: 600 !important;
 }
 
-#about .contacto img {
+#about .contacto img, #about2 .contacto img {
     max-width: 5rem;
 }
 
 /* Responsive */
 
 @media screen and (max-width: 1366px) {
-    #compugross .content {
+    #compugross .content, #compugross2 .content {
         padding-right: 1rem !important;
     }
 }
@@ -356,7 +356,7 @@ a {
         padding: 3rem 0 0 0;
     }
     
-    #welcome {
+    #welcome, #welcome2 {
         height: auto !important;
     }
 
@@ -372,16 +372,16 @@ a {
         text-align: center !important;
     }
 
-    #welcome h1 {
+    #welcome h1, #welcome2 h1 {
         font-size: 2em !important;
     }
     
-    #welcome h5 {
+    #welcome h5, #welcome2 h5 {
         text-transform: uppercase;
         font-size: 1em !important;
     }
 
-    #welcome h7 {
+    #welcome h7, #welcome2 h7 {
         font-size: 0.7em !important;
     }
 
@@ -405,11 +405,11 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    #compugross .content {
+    #compugross .content, #compugross2 .content {
         padding-right: 3rem !important;
     }
     
-    #about .contacto {
+    #about .contacto, #about2 .contacto {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -417,14 +417,14 @@ a {
         padding: 0;
     }
 
-    #about .contacto img {
+    #about .contacto img, #about2 .contacto img {
         width: 40px;
         height: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #projects .card {
+    #projects .card, #projects2 .card {
         flex-direction: column;
         max-height: 440px;
         min-height: 440px;
@@ -434,7 +434,7 @@ a {
         background-color: #f2f2f2 !important;
     }
 
-    #projects .card img, #projects .card a {
+    #projects .card img, #projects .card a, #projects2 .card img, #projects2 .card a {
         position: relative;
         height: 220px;
         opacity: 1;
@@ -445,33 +445,33 @@ a {
     }
     
 
-    #projects .card .card-body {
+    #projects .card .card-body, #projects2 .card .card-body {
         background-color: #000 !important;
         opacity: 1 !important;
     }
 
-    #projects .div-link-github {
+    #projects .div-link-github, #projects2 .div-link-github {
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
     }
 
-    #projects .div-link-github a {
+    #projects .div-link-github a, #projects2 .div-link-github a {
         width: 50vw;
     }
 
-    #projects h2, #compugross h2, #about h2 {
+    #projects h2, #compugross h2, #about h2, #projects2 h2, #compugross2 h2, #about2 h2 {
         font-size: 2em !important;
         width: 100%;
         text-align: center;
     }
 
-    #projects p, #compugross p, #about p {
+    #projects p, #compugross p, #about p, #projects2 p, #compugross2 p, #about2 p {
         font-size: 1em !important;
     }
 
-    #projects .technologies {
+    #projects .technologies, #projects2 .technologies {
         justify-content: center !important;
         text-align: center !important;
         font-size: 0.8em !important;
@@ -481,23 +481,23 @@ a {
         margin-left: 0;
     }
 
-    #compugross img {
+    #compugross img, #compugross2 img {
         width: 90% !important;
     }
 
-    #welcome, #projects, #compugross, #about {
+    #welcome, #projects, #compugross, #about, #welcome2, #projects2, #compugross2, #about2 {
         padding-top: 5rem;
     }
 
-    #projects, #compugross, #about {
+    #projects, #compugross, #about, #projects2, #compugross2, #about2 {
         margin-top: 5rem;
     }
 
-    #about .contacto {
+    #about .contacto, #about2 .contacto {
         margin-bottom: 4rem;
     }
 
-    #compugross .content, #about .content {
+    #compugross .content, #about .content, #compugross2 .content, #about2 .content {
         padding: 2rem 1rem !important;
     }
 }
@@ -515,6 +515,19 @@ a {
         text-align: left !important;
     }
 }
+
+.language-selector {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer !important;
+    z-index: 9999999 !important;
+}
+
+.hidden {
+    display: none;
+}
+
 /* 
 div {
     border: 1px solid red;

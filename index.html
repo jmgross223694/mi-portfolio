@@ -16,29 +16,58 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="btn-menu">
-                <label for="btn-menu">☰</label>
-            </div>
-        </div>
-        <section id="div-menu-lateral">
-            <div class="capa"></div>
-            <input type="checkbox" id="btn-menu">
-            <div onclick="CerrarMenu()" class="container-menu">
-                <div class="cont-menu">
-                    <nav>
-                        <a href="#welcome" onclick="CerrarMenu()">Home</a>
-                        <a href="#projects" onclick="CerrarMenu()">Projects</a>
-                        <a href="#compugross" onclick="CerrarMenu()">CompuGross</a>
-                        <a href="#about" onclick="CerrarMenu()">About</a>
-                        <a href="#contact" onclick="CerrarMenu()">Contact</a>
-                    </nav>
-                    <label for="CerrarMenu()" class="stl-lbl-btn-cerrar-menu">X</label>
+    <section id="header">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
                 </div>
             </div>
-        </section>
-    </header>
+            <section id="div-menu-lateral">
+                <div class="capa"></div>
+                <input type="checkbox" id="btn-menu">
+                <div onclick="CerrarMenu()" class="container-menu">
+                    <div class="cont-menu">
+                        <nav>
+                            <a href="#welcome" onclick="CerrarMenu()">Home</a>
+                            <a href="#projects" onclick="CerrarMenu()">Projects</a>
+                            <a href="#compugross" onclick="CerrarMenu()">CompuGross</a>
+                            <a href="#about" onclick="CerrarMenu()">About</a>
+                            <a href="#contact" onclick="CerrarMenu()">Contact</a>
+                        </nav>
+                        <label for="CerrarMenu()" class="stl-lbl-btn-cerrar-menu">X</label>
+                    </div>
+                </div>
+            </section>
+        </header>
+    </section>
+    <section id="header2" class="hidden">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu2">☰</label>
+                </div>
+            </div>
+            <section id="div-menu-lateral2">
+                <div class="capa"></div>
+                <input type="checkbox" id="btn-menu2">
+                <div onclick="CerrarMenu()" class="container-menu">
+                    <div class="cont-menu">
+                        <nav>
+                            <a href="#welcome2" onclick="CerrarMenu()">Inicio</a>
+                            <a href="#projects2" onclick="CerrarMenu()">Poyectos</a>
+                            <a href="#compugross2" onclick="CerrarMenu()">CompuGross</a>
+                            <a href="#about2" onclick="CerrarMenu()">Sobre mi</a>
+                            <a href="#contact2" onclick="CerrarMenu()">Contacto</a>
+                        </nav>
+                        <label for="CerrarMenu()" class="stl-lbl-btn-cerrar-menu">X</label>
+                    </div>
+                </div>
+            </section>
+        </header>
+    </section>
+    <button id="btnEnglish" class="language-selector btn btn-dark" onclick="TraducirSitio()">Show in Spanish</button>
+    <button id="btnSpanish" class="language-selector btn btn-dark hidden" onclick="TraducirSitio()">Mostrar en Inglés</button>
     <div class="container">
         <section id="welcome">
             <div class="welcome-main">
@@ -65,6 +94,33 @@
                 </div>
             </div>
         </section>
+        <section id="welcome2" class="hidden">
+            <div class="welcome-main">
+                <div class="welcome-text">
+                    <h7>Hola</h7>
+                    <h1>Soy Juan Manuel</h1>
+                    <h5>Desarrollador Full Stack</h5>
+                    <h7 class="welcome-description">
+                        Siempre me esfuerzo por aprender y mejorar, para aportar valor a cada proyecto en el que trabajo.
+                    </h7>
+                    <center>
+                        <button class="btn btn-primary"
+                            onclick="document.getElementById('about2').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+                            Conóceme...
+                        </button>
+                    </center>
+                </div>
+                <div class="welcome-img">
+                    <img src="Multimedia/Images/perfil.png" alternate-text="Foto_Perfil">
+                </div>
+                <div class="div-btn-responsive">
+                    <button class="btn btn-primary"
+                        onclick="document.getElementById('about2').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+                        Conóceme...
+                    </button>
+                </div>
+            </div>
+        </section>
         <section id="projects">
             <div class="div-title">
                 <h2 class="title">Some Projects</h2>
@@ -75,6 +131,19 @@
             <div class="div-link-github">
                 <a href="https://github.com/jmgross223694" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                     See more...
+                </a>
+            </div>
+        </section>
+        <section id="projects2" class="hidden">
+            <div class="div-title">
+                <h2 class="title">Algunos Proyectos</h2>
+            </div>
+            <div class="container mt-5" id="cards-projects2">
+                <div class="row" id="projectsContainer2"></div>
+            </div>
+            <div class="div-link-github">
+                <a href="https://github.com/jmgross223694" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    Ver más...
                 </a>
             </div>
         </section>
@@ -97,6 +166,30 @@
                         If you notice any improvements or constructive criticism, they are welcome...
                         <br>
                         And if you liked it, follow me!
+                    </p>
+                </div>
+                <div class="instagram">
+                    <a href="https://instagram.com/compugrossok/?theme=dark" target="_blank" rel="noopener noreferrer">
+                        <img src="Multimedia/Images/fondoCompuGrossIG.png" alt="https://instagram.com/compugrossok/?theme=dark" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="compugross2" class="hidden">
+            <div class="compugross-main">
+                <div class="div-title">
+                    <h2 class="title">CompuGross</h2>
+                </div>
+                <div class="content">
+                    <p>
+                        CompuGross es un proyecto personal que comenzó hace <span class="txtEdadCompuGross"
+                        id="edadCompuGross2"></span> años en 2013.<br>
+                        Gracias a un gran esfuerzo y constancia, ha crecido notablemente desde entonces y sobre todo 
+                        he aprendido infinidad de cosas y diferentes maneras de hacerlas. Sin embargo, sigo aprendiendo
+                        algo nuevo cada día.<br>
+                        Haz click en la imágen para ver algunos de los trabajos llevados a cabo a lo largo de estos años.<br>
+                        Si notas alguna mejora o crítica constructiva, será bienvenida...<br>
+                        Y si te gustó, seguime!
                     </p>
                 </div>
                 <div class="instagram">
@@ -137,6 +230,40 @@
                 </a>
                 <a href="https://www.linkedin.com/in/juan-manuel-gross/" target="_blank" rel="noopener noreferrer">
                     <img class="linkedin-logo" src="Multimedia/Images/linkedin_logo.png" title="Open LinkedIn" alt="LinkeIn" />
+                </a>
+            </div>
+        </section>
+        <section id="about2" class="hidden">
+            <div class="div-title">
+                <h2 class="title">Sobre mi</h2>
+            </div>
+            <div class="content">
+                <p>
+                    Hola a todos, soy Juan Manuel Gross, tengo 
+                    <span class="txtPresentacionEdad" id="edadActual2"></span> años y actualmente me desempeño 
+                    como analista e-commerce en INC SA (Carrefour), además soy desarrollador independiente.<br>
+                    Me apasiona la tecnología, especialmente la informática y la programación, que nos brinda 
+                    una amplia gama de herramientas para realizar diversas tareas cotidianas.<br>
+                    Mi pasión por la programación surge de mi curiosidad sobre el como del funcionamiento de
+                    las aplicaciones y sitios web.<br>
+                    En 2013, comencé un emprendimiento, brindando servicio técnico en informática e instalación 
+                    y mantenimiento de cámaras de seguridad.<br>
+                    Adicionalmente trabajo como desarrollador independiente, creando y realizando el 
+                    mantenimiento de aplicaciones y sitios web.
+                </p>
+            </div>
+            <div id="contact2" class="contacto">
+                <a href="https://docs.google.com/document/d/1sEn7BCBRJhXw5t_VS2HTOS_8zsM8zSkNxQWxsE9cBp0/view" target="_blank" rel="noopener noreferrer">
+                    <img class="pdf-logo" src="Multimedia/Images/pdf_logo.png" title="Abrir CV" alt="Curriculum Vitae" />
+                </a>
+                <a href="https://wa.me/5491156073553?text=Consulta%20Portfolio" target="_blank" rel="noopener noreferrer">
+                    <img class="whatsapp-logo" src="Multimedia/Images/wpp.png" title="Enviar WhatsApp" alt="Whats App" />
+                </a>
+                <a href="mailto:jmgross76@gmail.com?Subject=Contacto%20Portfolio" target="_blank" rel="noopener noreferrer">
+                    <img class="mail-logo" src="Multimedia/Images/correo.png" title="Enviar un Mail" alt="Mail" />
+                </a>
+                <a href="https://www.linkedin.com/in/juan-manuel-gross/" target="_blank" rel="noopener noreferrer">
+                    <img class="linkedin-logo" src="Multimedia/Images/linkedin_logo.png" title="Abrir LinkedIn" alt="LinkeIn" />
                 </a>
             </div>
         </section>
