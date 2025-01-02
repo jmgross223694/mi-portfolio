@@ -65,7 +65,7 @@ function cargarProyectos() {
             var cardHtml = `<div class="col-md-4">
                                 <a href="${proyecto.url}">
                                     <div class="card mb-4"> 
-                                        <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}">
+                                        <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
                                             <div class="card-body">
                                                 <h5 class="card-title">
                                                     ${proyecto.titulo}
