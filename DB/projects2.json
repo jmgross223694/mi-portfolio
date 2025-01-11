@@ -32,13 +32,13 @@
         "descripcion": "Administrador de Gimnasio",
         "technologies": "C++",
         "imagen": "Multimedia/Images/fondoYourGym.png",
-        "url": "url/a/proyecto2"
+        "url": "https://github.com/jmgross223694/YourGym"
     },
     {
         "titulo": "Lubri App",
         "descripcion": "Administrador de Lubricentro",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
         "imagen": "Multimedia/Images/LubriApp.png",
-        "url": "https://github.com/jmgross223694/LubriApp.png"
+        "url": "https://github.com/jmgross223694/LubriApp"
     }
 ]
