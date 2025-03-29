@@ -62,24 +62,22 @@ function cargarProyectos() {
     $.getJSON('DB/projects.json', function (data) { 
         var proyectosContainer = $('#projectsContainer');
         data.forEach(function (proyecto) { 
-            var cardHtml = `<div class="col-md-4">
-                                <a href="${proyecto.url}">
-                                    <div class="card mb-4"> 
-                                        <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    ${proyecto.titulo}
-                                                </h5>
-                                                <p class="card-text description">
-                                                    ${proyecto.descripcion}
-                                                </p>
-                                                <p class="card-text technologies">
-                                                    ${proyecto.technologies}
-                                                </p>
-                                            </div>
+            var cardHtml = `<a href="${proyecto.url}">
+                                <div class="card mb-4"> 
+                                    <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            ${proyecto.titulo}
+                                        </h5>
+                                        <p class="card-text description">
+                                            ${proyecto.descripcion}
+                                        </p>
+                                        <p class="card-text technologies">
+                                            ${proyecto.technologies}
+                                        </p>
                                     </div>
-                                </a>
-                            </div>`; 
+                                </div>
+                            </a>`; 
             proyectosContainer.append(cardHtml);
         }); 
     });
@@ -89,24 +87,22 @@ function cargarProyectos2() {
     $.getJSON('DB/projects2.json', function (data) { 
         var proyectosContainer2 = $('#projectsContainer2'); 
         data.forEach(function (proyecto) { 
-            var cardHtml = `<div class="col-md-4">
-                                <a href="${proyecto.url}">
-                                    <div class="card mb-4"> 
-                                        <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    ${proyecto.titulo}
-                                                </h5>
-                                                <p class="card-text description">
-                                                    ${proyecto.descripcion}
-                                                </p>
-                                                <p class="card-text technologies">
-                                                    ${proyecto.technologies}
-                                                </p>
-                                            </div>
+            var cardHtml = `<a href="${proyecto.url}">
+                                <div class="card mb-4"> 
+                                    <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            ${proyecto.titulo}
+                                        </h5>
+                                        <p class="card-text description">
+                                            ${proyecto.descripcion}
+                                        </p>
+                                        <p class="card-text technologies">
+                                            ${proyecto.technologies}
+                                        </p>
                                     </div>
-                                </a>
-                            </div>`;
+                                </div>
+                            </a>`;
             proyectosContainer2.append(cardHtml); 
         }); 
     });
