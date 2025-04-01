@@ -58,53 +58,83 @@ function calcularEdadCompuGross() {
     $('#edadCompuGross2').text(edad);
 }
 
-function cargarProyectos() {
-    $.getJSON('DB/projects.json', function (data) { 
+function cargarProyectos2() { //Inglés
+    $.getJSON('DB/projects.json', function (data) {
         var proyectosContainer = $('#projectsContainer');
-        data.forEach(function (proyecto) { 
-            var cardHtml = `<a href="${proyecto.url}">
-                                <div class="card mb-4"> 
-                                    <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            ${proyecto.titulo}
-                                        </h5>
-                                        <p class="card-text description">
-                                            ${proyecto.descripcion}
-                                        </p>
-                                        <p class="card-text technologies">
-                                            ${proyecto.technologies}
-                                        </p>
-                                    </div>
+        var carouselInner = $('<div class="carousel-inner"></div>');
+
+        data.forEach(function (proyecto, index) {
+            var activeClass = index === 0 ? 'active' : '';
+            var itemHtml = `
+                    <div class="carousel-item ${activeClass}">
+                        <a href="${proyecto.url}">
+                            <div class="card mb-4">
+                                <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
+                                <div class="card-body">
+                                    <h5 class="card-title">${proyecto.titulo}</h5>
+                                    <p class="card-text description">${proyecto.descripcion}</p>
+                                    <p class="card-text technologies">${proyecto.technologies}</p>
                                 </div>
-                            </a>`; 
-            proyectosContainer.append(cardHtml);
-        }); 
+                            </div>
+                        </a>
+                    </div>`;
+            carouselInner.append(itemHtml);
+        });
+
+        var carouselHtml = `
+                <div id="projectsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                    ${carouselInner.prop('outerHTML')}
+                </div>`;
+
+        proyectosContainer.html(carouselHtml);
+
+        // Inicializar el carrusel manualmente después de agregarlo al DOM
+        var carouselElement = document.querySelector("#projectsCarousel");
+        var carouselInstance = new bootstrap.Carousel(carouselElement, {
+            interval: 3000,
+            ride: 'carousel',
+            pause: false
+        });
     });
 }
 
-function cargarProyectos2() {
-    $.getJSON('DB/projects2.json', function (data) { 
-        var proyectosContainer2 = $('#projectsContainer2'); 
-        data.forEach(function (proyecto) { 
-            var cardHtml = `<a href="${proyecto.url}">
-                                <div class="card mb-4"> 
-                                    <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            ${proyecto.titulo}
-                                        </h5>
-                                        <p class="card-text description">
-                                            ${proyecto.descripcion}
-                                        </p>
-                                        <p class="card-text technologies">
-                                            ${proyecto.technologies}
-                                        </p>
-                                    </div>
+function cargarProyectos() { //Español
+    $.getJSON('DB/projects2.json', function (data) {
+        var proyectosContainer = $('#projectsContainer2');
+        var carouselInner = $('<div class="carousel-inner"></div>');
+
+        data.forEach(function (proyecto, index) {
+            var activeClass = index === 0 ? 'active' : '';
+            var itemHtml = `
+                    <div class="carousel-item ${activeClass}">
+                        <a href="${proyecto.url}">
+                            <div class="card mb-4">
+                                <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
+                                <div class="card-body">
+                                    <h5 class="card-title">${proyecto.titulo}</h5>
+                                    <p class="card-text description">${proyecto.descripcion}</p>
+                                    <p class="card-text technologies">${proyecto.technologies}</p>
                                 </div>
-                            </a>`;
-            proyectosContainer2.append(cardHtml); 
-        }); 
+                            </div>
+                        </a>
+                    </div>`;
+            carouselInner.append(itemHtml);
+        });
+
+        var carouselHtml = `
+                <div id="projectsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                    ${carouselInner.prop('outerHTML')}
+                </div>`;
+
+        proyectosContainer.html(carouselHtml);
+
+        // Inicializar el carrusel manualmente después de agregarlo al DOM
+        var carouselElement = document.querySelector("#projectsCarousel");
+        var carouselInstance = new bootstrap.Carousel(carouselElement, {
+            interval: 3000,
+            ride: 'carousel',
+            pause: false
+        });
     });
 }
 

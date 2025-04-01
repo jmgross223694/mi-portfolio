@@ -191,6 +191,11 @@ p {
     display: none;
 }
 
+#projectsContainer .carousel-inner {
+    max-height: 580px !important;
+    overflow: hidden !important;
+}
+
 #projectsContainer, #projectsContainer2 {
     gap: 2rem;
 }
