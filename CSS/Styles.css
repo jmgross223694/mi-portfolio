@@ -193,6 +193,7 @@ p {
 
 #projectsContainer .carousel-inner {
     max-height: 580px !important;
+    height: 580px !important;
     overflow: hidden !important;
 }
 
@@ -243,6 +244,125 @@ p {
     opacity: 0.4;
     -webkit-transition: ease-in-out 1s all;
 }
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 60% 60%;
+    background-color: rgba(255,255,255,0.08);
+    border: 1.5px solid rgba(255,255,255,0.6);
+    border-radius: 50%;
+    padding: 18px;
+    backdrop-filter: blur(4px);
+    transition: all .3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(255,255,255,0.15);
+    border-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.project-card {
+    border: none;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform .5s ease;
+}
+
+.badge-project {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #ffc107;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.project-card:hover .badge-project {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.85) 20%,
+        rgba(0,0,0,.6) 60%,
+        rgba(0,0,0,.3) 100%
+    );
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.overlay h5 {
+    transition-delay: .1s;
+}
+
+.overlay .type {
+    transition-delay: .2s;
+}
+
+.overlay .tech {
+    transition-delay: .3s;
+}
+
+.overlay h5,
+.overlay p {
+    transform: translateY(20px);
+    transition: transform .4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.project-card:hover .overlay h5,
+.project-card:hover .overlay p {
+    transform: translateY(0);
+}
+
 
 .div-link-github {
     margin: 2rem !important;
@@ -401,6 +521,10 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    #projectsContainer .carousel-inner, #projectsContainer2 .carousel-inner {
+        height: auto !important;
+    }
+
     #projectsContainer a, #projectsContainer2 a {
         justify-content: center;
         align-content: center;
@@ -411,10 +535,13 @@ p {
     #projects .card, #projects2 .card {
         flex-direction: column;
         max-height: 300px;
-        min-height: 300px;
         min-width: 90%;
         max-width: 90%;
         border: none;
+    }
+
+    .badge-project {
+        font-size: 10px !important;
     }
 
     #projects #projectsContainer .card .card-body h5, #projects2 #projectsContainer2 .card .card-body h5, #projects #projectsContainer .card .card-body p, #projects2 #projectsContainer2 .card .card-body p {

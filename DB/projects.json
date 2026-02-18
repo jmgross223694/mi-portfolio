@@ -3,35 +3,35 @@
         "titulo": "EMV Productions",
         "descripcion": "Professional Portfolio",
         "technologies": "HTML, CSS, JS",
-        "imagen": "Multimedia/Images/emv.png",
+        "imagen": "Multimedia/Images/emv.webp",
         "url": "https://emv-productions.github.io/portfolio/"
     },
     {
         "titulo": "Huellas Conectadas",
-        "descripcion": "Pet Adoption",
+        "descripcion": "Communitary website",
         "technologies": ".NET, C#, API, SQL, HTML, CSS, JS",
-        "imagen": "Multimedia/Images/HuellasConectadas.png",
+        "imagen": "Multimedia/Images/HuellasConectadas.webp",
         "url": "https://www.huellasconectadas.com.ar/"
     },
     {
         "titulo": "La Casa del Mimbre",
         "descripcion": "Ecommerce",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "Multimedia/Images/fondoCasaMimbre.png",
+        "imagen": "Multimedia/Images/fondoCasaMimbre.webp",
         "url": "https://lacasadelmimbre.com.ar/"
     },
     {
         "titulo": "CompuGross",
         "descripcion": "Services Management",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "Multimedia/Images/fondoCompuGross.png",
+        "imagen": "Multimedia/Images/fondoCompuGross.webp",
         "url": "https://github.com/jmgross223694/CompuGross_Desktop"
     },
     {
         "titulo": "Lubri App",
         "descripcion": "Lubecenter Management",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "Multimedia/Images/LubriApp.png",
+        "imagen": "Multimedia/Images/LubriApp.webp",
         "url": "https://github.com/jmgross223694/LubriApp"
     }
 ]

@@ -58,7 +58,7 @@ function calcularEdadCompuGross() {
     $('#edadCompuGross2').text(edad);
 }
 
-function cargarProyectos2() { //Inglés
+function cargarProyectos() { //Inglés
     $.getJSON('DB/projects.json', function (data) {
         var proyectosContainer = $('#projectsContainer');
         var carouselInner = $('<div class="carousel-inner"></div>');
@@ -68,14 +68,17 @@ function cargarProyectos2() { //Inglés
             var itemHtml = `
                     <div class="carousel-item ${activeClass}">
                         <a href="${proyecto.url}">
-                            <div class="card mb-4">
-                                <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
-                                <div class="card-body">
-                                    <h5 class="card-title">${proyecto.titulo}</h5>
-                                    <p class="card-text description">${proyecto.descripcion}</p>
-                                    <p class="card-text technologies">${proyecto.technologies}</p>
+                            <div class="card project-card mb-4">
+                                <div class="image-wrapper">
+                                    <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
+                                    <span class="badge-project">${proyecto.descripcion}</span>
+                                    <div class="overlay">
+                                        <h5>${proyecto.titulo}</h5>
+                                        <p class="type">${proyecto.descripcion}</p>
+                                        <p class="tech">${proyecto.technologies}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </div>  
                         </a>
                     </div>`;
             carouselInner.append(itemHtml);
@@ -84,6 +87,12 @@ function cargarProyectos2() { //Inglés
         var carouselHtml = `
                 <div id="projectsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
                     ${carouselInner.prop('outerHTML')}
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>`;
 
         proyectosContainer.html(carouselHtml);
@@ -93,12 +102,12 @@ function cargarProyectos2() { //Inglés
         var carouselInstance = new bootstrap.Carousel(carouselElement, {
             interval: 3000,
             ride: 'carousel',
-            pause: false
+            pause: 'hover'
         });
     });
 }
 
-function cargarProyectos() { //Español
+function cargarProyectos2() { //Español
     $.getJSON('DB/projects2.json', function (data) {
         var proyectosContainer = $('#projectsContainer2');
         var carouselInner = $('<div class="carousel-inner"></div>');
@@ -108,14 +117,17 @@ function cargarProyectos() { //Español
             var itemHtml = `
                     <div class="carousel-item ${activeClass}">
                         <a href="${proyecto.url}">
-                            <div class="card mb-4">
-                                <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
-                                <div class="card-body">
-                                    <h5 class="card-title">${proyecto.titulo}</h5>
-                                    <p class="card-text description">${proyecto.descripcion}</p>
-                                    <p class="card-text technologies">${proyecto.technologies}</p>
+                            <div class="card project-card mb-4">
+                                <div class="image-wrapper">
+                                    <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
+                                    <span class="badge-project">${proyecto.descripcion}</span>
+                                    <div class="overlay">
+                                        <h5>${proyecto.titulo}</h5>
+                                        <p class="type">${proyecto.descripcion}</p>
+                                        <p class="tech">${proyecto.technologies}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </div>  
                         </a>
                     </div>`;
             carouselInner.append(itemHtml);
@@ -124,6 +136,12 @@ function cargarProyectos() { //Español
         var carouselHtml = `
                 <div id="projectsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
                     ${carouselInner.prop('outerHTML')}
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>`;
 
         proyectosContainer.html(carouselHtml);
@@ -133,7 +151,7 @@ function cargarProyectos() { //Español
         var carouselInstance = new bootstrap.Carousel(carouselElement, {
             interval: 3000,
             ride: 'carousel',
-            pause: false
+            pause: 'hover'
         });
     });
 }
