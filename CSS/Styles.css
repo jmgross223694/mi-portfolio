@@ -466,7 +466,7 @@ p {
         display: flex;
         flex-direction: column;
         width: 80%;
-        text-align: center !important;
+        text-align: left !important;
     }
 
     #welcome h1, #welcome2 h1 {
@@ -540,6 +540,11 @@ p {
         border: none;
     }
 
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-size: 70% 70% !important;
+        padding: 10px !important;
+    }
+
     .badge-project {
         font-size: 10px !important;
     }
@@ -580,7 +585,7 @@ p {
     #projects h2, #compugross h2, #about h2, #projects2 h2, #compugross2 h2, #about2 h2 {
         font-size: 2em !important;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     #projects p, #compugross p, #about p, #projects2 p, #compugross2 p, #about2 p {
