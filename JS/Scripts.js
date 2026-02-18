@@ -67,7 +67,7 @@ function cargarProyectos() { //Inglés
             var activeClass = index === 0 ? 'active' : '';
             var itemHtml = `
                     <div class="carousel-item ${activeClass}">
-                        <a href="${proyecto.url}">
+                        <a href="${proyecto.url}" target="_blank" rel="noopener noreferrer">
                             <div class="card project-card mb-4">
                                 <div class="image-wrapper">
                                     <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
@@ -116,7 +116,7 @@ function cargarProyectos2() { //Español
             var activeClass = index === 0 ? 'active' : '';
             var itemHtml = `
                     <div class="carousel-item ${activeClass}">
-                        <a href="${proyecto.url}">
+                        <a href="${proyecto.url}" target="_blank" rel="noopener noreferrer">
                             <div class="card project-card mb-4">
                                 <div class="image-wrapper">
                                     <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
