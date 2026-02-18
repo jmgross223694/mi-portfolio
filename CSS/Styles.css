@@ -168,6 +168,7 @@ p {
 
 #welcome center, #welcome2 center {
     margin-top: 3rem;
+    text-align: left !important;
 }
 
 .welcome-text .btn-primary {
@@ -191,14 +192,15 @@ p {
     display: none;
 }
 
-#projectsContainer .carousel-inner {
-    max-height: 580px !important;
-    height: 580px !important;
+#projectsContainer .carousel-inner, #projectsContainer2 .carousel-inner {
+    max-height: 500px !important;
+    height: 500px !important;
     overflow: hidden !important;
 }
 
 #projectsContainer, #projectsContainer2 {
     gap: 2rem;
+    padding: 0 3rem;
 }
 
 #projectsContainer a, #projectsContainer2 a {
@@ -363,13 +365,18 @@ p {
     transform: translateY(0);
 }
 
-
 .div-link-github {
-    margin: 2rem !important;
+    margin: 0 1rem 4rem 0 !important;
 }
 
 .div-link-github .btn {
-    margin-left: 2.8rem;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
+    margin-left: 3rem;
 }
 
 #compugross, #compugross2 {
@@ -493,7 +500,7 @@ p {
 
     .div-btn-responsive {
         display: block;
-        width: 50vw;
+        width: 80vw;
     }
 
     .div-btn-responsive .btn {
@@ -523,6 +530,14 @@ p {
 @media screen and (max-width: 768px) {
     #projectsContainer .carousel-inner, #projectsContainer2 .carousel-inner {
         height: auto !important;
+    }
+
+    #projectsContainer, #projectsContainer2 {
+        padding: 0 !important;
+    }
+
+    .div-link-github {
+        margin: 2rem 0 0 0 !important;
     }
 
     #projectsContainer a, #projectsContainer2 a {
@@ -579,7 +594,7 @@ p {
     }
 
     #projects .div-link-github a, #projects2 .div-link-github a {
-        width: 50vw;
+        width: 80vw;
     }
 
     #projects h2, #compugross h2, #about h2, #projects2 h2, #compugross2 h2, #about2 h2 {
@@ -612,6 +627,10 @@ p {
 
     #projects, #compugross, #about, #projects2, #compugross2, #about2 {
         margin-top: 5rem;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
     }
 
     #about .contacto, #about2 .contacto {
