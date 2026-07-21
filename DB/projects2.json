@@ -21,17 +21,10 @@
         "url": "https://lacasadelmimbre.com.ar/"
     },
     {
-        "titulo": "CompuGross",
-        "descripcion": "Administrador de Servicios",
+        "titulo": "Mundo Diseño",
+        "descripcion": "Comercio Electrónico",
         "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "Multimedia/Images/fondoCompuGross.webp",
-        "url": "https://github.com/jmgross223694/CompuGross_Desktop"
-    },
-    {
-        "titulo": "Lubri App",
-        "descripcion": "Administrador de Lubricentro",
-        "technologies": ".NET, C#, SQL, HTML, CSS, JS",
-        "imagen": "Multimedia/Images/LubriApp.webp",
-        "url": "https://github.com/jmgross223694/LubriApp"
+        "imagen": "Multimedia/Images/fondoMundoDiseno.webp",
+        "url": "https://mundods.com.ar/"
     }
 ]
